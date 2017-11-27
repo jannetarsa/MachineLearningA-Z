@@ -26,3 +26,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 1/3, rando
 sc_X = StandardScaler()
 X_train = sc_X.fit_transform(X_train)
 X_test = sc_X.transform(X_test)"""
+
+from sklearn.linear_model import LinearRegression
+reressor = LinearRegression()
+regressor.fit(X_train, y_train)
